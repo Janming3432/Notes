@@ -1,0 +1,115 @@
+.heading{
+  border: none;
+  outline: none;
+  background-color: #e1e0e07c;
+  padding: 1%;
+  border-radius: 0.2vw;
+  width: 40vw;
+  font-size: 0.8vw;
+  font-weight: bold;
+}
+
+.date{
+  font-size: 2vw;
+  font-weight: bold;
+  margin: 1%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing;
+  animation-duration: 3s;
+  animation-timing-function: steps(100,end);
+  animation-fill-mode: forwards;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100% }
+}
+
+.notes-area {
+  border: none;
+  background-color: #e1e0e07c;
+  width: 50.5vw;
+  padding: 1.5%;
+  outline: none;
+  font-size: 1.3vw;
+  text-overflow: clip;
+  overflow: scroll;
+  height: 70vh;
+  color: rgb(94, 87, 76);
+  border-radius: 0.4vw;
+  white-space: pre-wrap;
+}
+
+.notes-area[placeholder]:empty:before{
+  content: attr(placeholder);
+}
+
+.top-portion{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.saveBtn {
+  height: 2vw;
+  width: 11vw;
+  border: none;
+  background-color: #000000b6;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  margin-left: 1vw;
+  border-radius: 3px;
+}
+
+.saveBtn:hover {
+  background-color: #b8b8b8;
+}
+
+@media (min-width: 750px) and (max-width: 1000px) {
+  .notes-area {
+    width: 60vw;
+    font-size: 4.5vw;
+    padding: 2vw;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 749px) {
+  .notes-area {
+    width: 65vw;
+    font-size: 6vw;
+    padding: 3vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .notes-area {
+    width: 70vw;
+    font-size: 8vw;
+    padding: 4vw;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 500px) {
+  .notes-area {
+    width: 75vw;
+    font-size: 10vw;
+    padding: 5vw;
+  }
+}
+
+@media (max-width: 299px) {
+  .notes-area {
+    width: 75vw;
+    font-size: 11vw;
+    padding: 6vw;
+  }
+}

@@ -1,0 +1,34 @@
+.lockBtn {
+  border: none;
+  background-color: transparent;
+  fill: rgba(0, 0, 0, 0.944);
+  width: 2vw;
+  height: 2vw;
+  opacity: 70%;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.lockBtn:hover {
+  opacity: 50%;
+}
+
+.lockBtn:active {
+  background-color: #ccc8c8;
+}
+
+.lockBtn svg {
+  width: 1.2vw;
+  height: 1.2vw;
+}
+
+.password {
+  font-family: Poppins, sans-serif;
+  font-size: 1vw;
+  padding: 3%;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  background-color: #b2b2b2;
+  width: 5vw;
+}

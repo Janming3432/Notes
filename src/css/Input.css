@@ -1,0 +1,35 @@
+.searchBar {
+  border: none;
+  width: 32vw;
+  font-size: 1.2vw;
+  border-radius: 15px;
+  font-family: Poppins, sans-Serif;
+  outline: none;
+  background-color: #9c9c9c9c;
+  margin: 2% 0% 2% 0%;
+  padding: 10px 20px;
+}
+@media (min-width: 1001px) and (max-width: 1250px) {
+  .searchBar {
+    font-size: 1.5vw;
+    width: 40vw;
+  }
+}
+@media (min-width: 751px) and (max-width: 1000px) {
+  .searchBar {
+    font-size: 1.8vw;
+    width: 45vw;
+  }
+}
+@media (min-width: 601px) and (max-width: 750px) {
+  .searchBar {
+    font-size: 2vw;
+    width: 50vw;
+  }
+}
+@media (max-width: 600px) {
+  .searchBar {
+    font-size: 2.2vw;
+    width: 55vw;
+  }
+}

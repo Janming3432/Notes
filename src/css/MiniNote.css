@@ -1,0 +1,118 @@
+.miniNote {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2vw;
+  gap: 1vw;
+  cursor: pointer;
+}
+
+.miniNote p{
+  font-family: Poppins, sans-serif;
+  margin: 0;
+  margin-left: 1.7vw;
+}
+.note-title{
+  display: flex;
+  width: 25vw;
+  word-break: break-all;
+  padding-left: 0.5vw;
+}
+
+.note-date{
+  padding: 0;
+  width: 7vw;
+}
+
+.dltBtn {
+  border: none;
+  background-color: transparent;
+  fill: rgba(0, 0, 0, 0.944);
+  width: 2vw;
+  height: 2vw;
+  opacity: 70%;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.dltBtn:hover {
+  opacity: 50%;
+}
+.dltBtn:active {
+  background-color: #ccc8c8;
+}
+
+.dltBtn svg {
+  width: 1.2vw;
+  height: 1.2vw;
+}
+
+
+@media (min-width: 1001px) and (max-width: 1250px){
+  .miniNote{
+    font-size: 1.5vw;
+    gap: 3vw;
+  }
+  .note-title{
+    width: 27vw;
+  }
+}
+
+@media (min-width: 749px) and (max-width: 1000px) {
+  .miniNote {
+    font-size: 1.8vw;
+    gap: 4vw;
+  }
+  .miniNote p{
+    margin-left: 1vw;
+  }
+  .note-title{
+    width: 30vw;
+  }
+  .dltBtn {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+  .dltBtn svg {
+    width: 2vw;
+    height: 2vw;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 749px) {
+  .miniNote {
+    font-size: 2vw;
+    gap: 3vw;
+  }
+  .miniNote p{
+    margin-left: 4vw;
+  }
+  .note-title{
+    width: 33vw;
+  }
+  .dltBtn {
+    height: 3.5vw;
+    width: 3.5vw;
+  }
+  .dltBtn svg {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+}
+@media (min-width: 0px) and (max-width: 600px) {
+  .miniNote {
+    font-size: 2.2vw;
+    gap: 3vw;
+  }
+  .note-title{
+    width: 38vw;
+  }
+  .dltBtn {
+    height: 4vw;
+    width: 4vw;
+  }
+  .dltBtn svg {
+    width: 2.8vw;
+    height: 2.8vw;
+  }
+} 
